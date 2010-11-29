@@ -1,10 +1,14 @@
-First attempt to use DataMapper with sqlite
+URL minifier done with Sinatra
+==============================
 
-http://www.noswearing.com/dictionary
+Fun little example of a very simple URL minifier.
 
-<form method="get" action="search.php">
-Search Bad Words:  <input value="ass" name="st" size="15">&nbsp;&nbsp;
-<input type="submit" value="Search" name="submit">
-</form>
+ruby app.rb # runs the Sinatra application.
 
-http://www.noswearing.com/search.php
+Nothing is done to prevent the minify tokens from being a bad/swear
+word.
+
+Learning Ruby example by
+Craig H. Anderson
+craig@coot.net
+@cootcraig on twitter
