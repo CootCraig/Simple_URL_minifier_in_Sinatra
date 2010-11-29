@@ -1,0 +1,19 @@
+!!! Strict
+%html
+  %head
+  %body
+    %div#header
+      %h1 Craig's URL Minimizer
+    %div#main
+      %form{ :method => 'post', :action => '/' }
+        URL to minimize:
+        %input{ :type => 'text', :name => 'full_url', :value => '', :size => '50' }
+          %p
+            %input{ :type => 'submit', :value => 'Submit' }
+      - if @full_url            
+        %div#report
+          %h2 Full URL
+          %a{ :href => "#{@token_path}" }= @full_url
+          %h2 Minimized URL
+          %form
+            %input{ :type => 'text', :readonly => 'readonly', :value => "#{@token_path}", :size => '40' }

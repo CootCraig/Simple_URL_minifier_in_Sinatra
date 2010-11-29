@@ -1,0 +1,94 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Sinatra Application - TinyUrl Work Alike
+\end_layout
+
+\begin_layout Section
+Application URLs
+\end_layout
+
+\begin_layout Paragraph
+/CreateTokenForUrl/:url
+\end_layout
+
+\begin_layout Standard
+Add a redirect token for the url.
+ Returns the token.
+\end_layout
+
+\begin_layout Paragraph
+/UrlForToken/:token
+\end_layout
+
+\begin_layout Standard
+Return the token for the url if it exists.
+\end_layout
+
+\begin_layout Paragraph
+/RedirectOnToken/:token
+\end_layout
+
+\begin_layout Standard
+Redirect to the URL for the token.
+ Error redirect if token is not defined.
+\end_layout
+
+\begin_layout Paragraph
+/TokenNotFound/:token
+\end_layout
+
+\begin_layout Standard
+Page to announce token not found.
+\end_layout
+
+\begin_layout Paragraph
+/
+\end_layout
+
+\begin_layout Standard
+Page with form to enter a url and get a token.
+\end_layout
+
+\end_body
+\end_document

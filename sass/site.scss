@@ -1,0 +1,67 @@
+@import "meyer_reset.scss";
+@import "color_scheme.scss";
+
+body {
+	width: 900px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+h1 {
+	font-size: 220%;
+}
+h2 {
+	font-size: 145%;
+}
+h3 {
+	font-size: 130%;
+}
+h4 {
+	font-size: 115%;
+}
+#header {
+	padding: 10px;
+	background-color: $secondary-b-2;
+}
+#mainmenu {
+	padding: 5px;
+	padding-bottom: 15px;
+	background-color: $secondary-b-2;
+}
+#navigation {
+	float: left;
+	width: 180px;
+	padding: 10px;
+}
+#news {
+	float: right;
+	width: 180px;
+	padding: 10px;
+}
+#pagecontent {
+	margin-left: 220px;
+	margin-right: 220px;
+	color: $complement-3;
+	p {
+		text-indent: 2em;
+	}
+}
+#footer {
+	padding: 10px;
+	background-color: $secondary-b-2;
+}
+#wrapper1 {
+	background: url(images/bg1.png) repeat-y left top;
+	background-color: $secondary-a-5;
+}
+
+#wrapper2 {
+	background: url(images/bg1.png) repeat-y right top;
+}
+.mainmenuitem {
+	margin-left: 4px;
+	padding: 2px;
+	background-color: $primary-1;
+}
+.box_test {
+	border: 1px solid #f00;
+}

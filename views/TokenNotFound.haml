@@ -1,0 +1,10 @@
+!!! Strict
+%html
+  %head
+  %body
+    %div#header
+      %h1 Craig's URL Minimizer
+    %div#main_menu
+      %a{ :href => "/" } Enter a new URL
+    %div#error_message
+      %p= "Token not found: #{@token}"
